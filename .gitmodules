@@ -1,0 +1,6 @@
+[submodule "travel-recommender-backend"]
+	path = travel-recommender-backend
+	url = https://github.com/peter0512lee/travel-recommender-backend.git
+[submodule "travel-recommender-frontend"]
+	path = travel-recommender-frontend
+	url = https://github.com/peter0512lee/travel-recommender-frontend.git
