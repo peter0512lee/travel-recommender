@@ -8,18 +8,18 @@ Travel Experience Recommender is a full-stack application that provides personal
 - React-based frontend for easy user interaction
 - Retrieval-Augmented Generation (RAG) system for context-aware recommendations
 - Integration with Google's Gemini API for natural language processing
-- Redis-based caching system for improved performance
 - Responsive design using Material-UI
 
 ## Tech Stack
 
 ### Backend
+
 - FastAPI
 - Google Generative AI (Gemini API)
-- Redis
 - Uvicorn
 
 ### Frontend
+
 - React
 - Axios
 - Material-UI
@@ -32,11 +32,9 @@ Travel Experience Recommender is a full-stack application that provides personal
 
 ## Installation
 
-### Backend Setup
-
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/travel-experience-recommender.git
+   git clone --recursive https://github.com/peter0512lee/travel-recommender.git
    cd travel-experience-recommender
    ```
 
@@ -46,16 +44,18 @@ Travel Experience Recommender is a full-stack application that provides personal
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-3. Install the required packages:
+### Backend Setup
+
+
+1. Install the required packages:
    ```
+   cd travel-recommender-backend
    pip install -r requirements.txt
    ```
 
-4. Set up your environment variables in a `.env` file:
+2. Set up your environment variables in a `.env` file:
    ```
    GOOGLE_API_KEY=your_google_api_key_here
-   REDIS_HOST=localhost
-   REDIS_PORT=6379
    ```
 
 ### Frontend Setup
@@ -74,7 +74,12 @@ Travel Experience Recommender is a full-stack application that provides personal
 
 ### Start the Backend Server
 
-1. From the root directory, run:
+1. In a new terminal, navigate to the frontend directory:
+   ```
+   cd travel-recommender-backend
+   ```
+
+2. run:
    ```
    python main.py
    ```
@@ -84,7 +89,7 @@ Travel Experience Recommender is a full-stack application that provides personal
 
 1. In a new terminal, navigate to the frontend directory:
    ```
-   cd frontend
+   cd travel-recommender-frontend
    ```
 
 2. Start the React development server:
