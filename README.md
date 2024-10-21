@@ -40,10 +40,10 @@ Travel Experience Recommender is a full-stack application that provides personal
    cd travel-experience-recommender
    ```
 
-2. Create and activate a virtual environment:
+2. Create and activate a virtual environment using conda (recommended):
    ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   conda create -n travel-recommender python=3.11
+   conda activate travel-recommender
    ```
 
 ### Backend Setup
@@ -55,7 +55,7 @@ Travel Experience Recommender is a full-stack application that provides personal
    pip install -r requirements.txt
    ```
 
-2. Set up your environment variables in a `.env` file:
+2. Create the `.env` file in `travel-recommender-backend` folder and set up your environment variables in a `.env` file:
    ```
    GOOGLE_API_KEY=your_google_api_key_here
    ```
@@ -83,7 +83,7 @@ Travel Experience Recommender is a full-stack application that provides personal
 
 2. run:
    ```
-   python main.py
+   fastapi dev .\app\main.py
    ```
    The server will start on `http://localhost:8000`.
 
