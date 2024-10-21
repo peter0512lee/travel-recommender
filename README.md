@@ -2,6 +2,8 @@
 
 Travel Experience Recommender is a full-stack application that provides personalized travel recommendations based on user preferences. It utilizes a Retrieval-Augmented Generation (RAG) system powered by Google's Gemini API to generate tailored travel suggestions.
 
+![demo](imgs/demo.png)
+
 ## Features
 
 - RESTful API for submitting travel preferences and receiving recommendations
@@ -17,6 +19,7 @@ Travel Experience Recommender is a full-stack application that provides personal
 - FastAPI
 - Google Generative AI (Gemini API)
 - Uvicorn
+- LangChain
 
 ### Frontend
 
@@ -27,8 +30,7 @@ Travel Experience Recommender is a full-stack application that provides personal
 ## Prerequisites
 
 - Python 3.8+
-- Node.js 14+
-- Redis
+- Node.js 18+
 
 ## Installation
 
@@ -57,7 +59,7 @@ Travel Experience Recommender is a full-stack application that provides personal
    ```
    GOOGLE_API_KEY=your_google_api_key_here
    ```
-
+   
 ### Frontend Setup
 
 1. Navigate to the frontend directory:
@@ -67,7 +69,7 @@ Travel Experience Recommender is a full-stack application that provides personal
 
 2. Install the required packages:
    ```
-   npm install
+   npm install --force
    ```
 
 ## Running the Application
